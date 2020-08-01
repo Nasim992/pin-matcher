@@ -13,7 +13,7 @@ function generatePin() {
 
 /*````````````Calculator button Section Starts``````````*/
 
-document.getElementById('calCulatorBody').addEventListener('click',(event)=> {
+document.getElementById( 'calCulatorBody' ).addEventListener( 'click',(event) => {
     let userInput = document.getElementById('userInput') ;
     userInput.style.textAlign = 'center' ;
 
@@ -59,8 +59,6 @@ document.getElementById('submitButton').addEventListener('click',(event)=> {
         }
         else if ( showGeneratePin == userInput ) {
             document.getElementById( 'passwordMatched' ).style.display = 'block' ;
-            document.getElementById( 'passwordWrong' ).style.display = 'none' ;
-            
         }
     }
 
