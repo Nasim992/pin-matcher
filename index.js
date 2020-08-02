@@ -16,6 +16,8 @@ function generatePin() {
 document.getElementById( 'calc-body' ).addEventListener('click',(event)=>{
     let userInput = document.getElementById( 'userInput' );
 
+    document.getElementById('userInput').style.textAlign = 'center' ;
+
     if ( userInput.value.length <4 ) {
         if( event.target.className == 'button' ){
             if ( event.target.id != 'deleteButton' && event.target.id != 'submitButton' && event.target.id != 'try-left' ) {
@@ -47,7 +49,7 @@ document.getElementById( 'submitButton' ).addEventListener( 'click' ,( event )=>
     let showGeneratePin = document.getElementById ( 'show-generate-pin' ).value ;
     let userInput = document.getElementById( 'userInput' ).value ;
 
-    document.getElementById('userInput').style.textAlign = 'center' ;
+    
 
     if ( showGeneratePin >=0 && userInput >=0 ) {
         if( (showGeneratePin =="" && userInput == "") || (showGeneratePin == "" || userInput == "")) {
